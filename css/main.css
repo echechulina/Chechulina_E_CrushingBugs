@@ -9,9 +9,16 @@ body {
 	font-size: 16px;
 }
 
-.hidden { display: none }
+.hidden
+{
+	display: none;
+}
 
-#game-boards { width: 100%; text-align: center; }
+#game-boards
+{
+	width: 100%;
+	 text-align: center;
+  }
 
 .puzzle-pieces, .puzzle-board {
 	margin-top: 40px;
@@ -23,9 +30,13 @@ body {
 	overflow: hidden;
 }
 
-.puzzle-pieces { width: 300px; margin-right: 20px; }
+.puzzle-pieces {
+	 width: 300px;
+	 margin-right: 20px;
+ }
 
-.puzzle-board { width: 600px; }
+.puzzle-board {
+	 width: 600px; }
 
 .puzzle-image {
 	width: 40%;
@@ -34,7 +45,9 @@ body {
 	cursor: pointer;
 }
 
-.puzzle-pieces img:nth-child(odd) { margin-left: auto }
+.puzzle-pieces img:nth-child(odd) {
+	 margin-left: auto
+ }
 
 /* arrange the puzzle pieces on the board */
 .drop-zone img {
@@ -45,8 +58,12 @@ body {
 	width: auto;
 }
 
-.br img, .bl img { top: 0; }
-.tl img, .bl img { right: 0; }
+.br img, .bl img {
+	top: 0;
+ }
+.tl img, .bl img {
+	right: 0;
+}
 
 
 /* set up drop zones */
