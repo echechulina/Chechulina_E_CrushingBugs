@@ -1,0 +1,4 @@
+Crushing Bugs
+
+-Correct the code so that the drop zone is cleared when reset.
+-Correct the code so that only one piece of the puzzle is installed in the drop zone.
