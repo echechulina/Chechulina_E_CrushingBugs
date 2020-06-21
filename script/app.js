@@ -24,27 +24,23 @@
 
 		console.log('started dragging an image: this one - ', event.target.id);
 		event.dataTransfer.setData("draggedImg", this.id);
-		// event.dataTransfer.setData("targetTrack", this.dataset.track);
 
-		// set a reference to a data track so i can retrieve it later in the drop
 	}
 
 	function allowDragOver(event) {
-		event.preventDefault(); // for next week
+		event.preventDefault();
 		console.log('dragged something over me!');
 	}
 
 	function allowDrop(event) {
-		if (this.children.lenght >= 1)
-		{
-			return;
-		}
+    if (this.children.length >= 1) {
+      return;
+    }
+console.log('dropped an image');
+  let droppedImage = event.dataTransfer.getData("draggedImg");
+  event.target.appendChild(document.querySelector(`#${droppedImage}`));
+    }
 
-		console.log('dropped an image');
-		let droppedImage = event.dataTransfer.getData("draggedImg");
-		event.target.appendChild(document.querySelector(`#${droppedImage}`));
-		//debugger;
-	}
 	 function resetPuzzle()
 	{
 	  for (let loop = 0; loop < puzzlePieces.length; loop=loop+1)
